@@ -3,16 +3,16 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://liderensino.com.br/',
     'production' => false,
-    'siteName' => 'Blog Starter Template',
+    'siteName' => 'Centro Educacional Líder de Ensino',
     'siteDescription' => 'Generate an elegant blog with Jigsaw',
-    'siteAuthor' => 'Author Name',
+    'siteAuthor' => 'G8 Soluções Integradas em SMS',
 
     // collections
     'collections' => [
         'posts' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
+            'author' => 'G8 Soluções Integradas em SMS', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'blog/{filename}',
         ],
