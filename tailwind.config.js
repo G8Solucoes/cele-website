@@ -1,6 +1,10 @@
 const defaults = require('tailwindcss/defaultTheme');
 
 module.exports = {
+    plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
     purge: {
         content: [
             'source/**/*.html',
@@ -13,12 +17,6 @@ module.exports = {
             safelist: [/language/, /hljs/, /mce/],
         },
     },
-    plugins: [
-        require('flowbite/plugin')
-    ],
-    content: [
-        "./node_modules/flowbite/**/*.js"
-    ],
     theme: {
         extend: {
             fontFamily: {

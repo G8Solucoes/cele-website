@@ -1,8 +1,8 @@
 @extends('_layouts.main')
 
 @section('body')
-    @foreach ($posts->where('featured', true) as $featuredPost)
-        <div class="w-full mb-6">
+    {{-- @foreach ($posts->where('featured', true) as $featuredPost)
+         <div class="w-full mb-6">
             @if ($featuredPost->cover_image)
                 <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
             @endif
@@ -26,12 +26,17 @@
 
         @if (! $loop->last)
             <hr class="border-b my-6">
-        @endif
+        @endif 
     @endforeach
+    --}}
 
-    @include('_components.newsletter-signup')
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 w-56 h-56">
+        teste
+    </div>
 
-    @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
+    {{-- <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6"> --}}
+
+    {{-- @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
         <div class="flex flex-col md:flex-row md:-mx-6">
             @foreach ($row as $post)
                 <div class="w-full md:w-1/2 md:mx-6">
@@ -47,5 +52,5 @@
         @if (! $loop->last)
             <hr class="w-full border-b mt-2 mb-6">
         @endif
-    @endforeach
+    @endforeach --}}
 @stop
