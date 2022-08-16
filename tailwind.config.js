@@ -32,6 +32,12 @@ module.exports = {
             boxShadow: {
                 search: '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',
             },
+            backgroundImage: {
+                'post-cover-01': "url('/assets/img/post-cover-image-1.png')",
+                'post-cover-02': "url('/assets/img/post-cover-image-2.png')",
+                'cover-image-01': "url('/assets/img/cover-image-01.webp')",
+                'cover-image-02': "url('/assets/img/cover-image-02.webp')",
+            }
         },
         fontSize: {
             xs: '.8rem',

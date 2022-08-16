@@ -30,8 +30,32 @@
     @endforeach
     --}}
 
-    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 w-56 h-56">
-        teste
+    <div class="bg-cover-image-01 w-full h-64 bg-cover ">
+        <div class="container">
+            <h2 class="m-0">Nossa história</h2>
+            <p>Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
+        </div>
+    </div>
+
+    <div class="bg-blue-500 w-full h-56 bg-cover ">
+        <div class="container">
+            <h2 class="m-0">Nossa história</h2>
+            <p>Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
+        </div>
+    </div>
+
+    <div class="bg-white w-full h-full bg-cover ">
+        <div class="container">
+            <h2 class="m-0">Nossa história</h2>
+            <p>Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
+        </div>
+    </div>
+
+    <div class="bg-cover-image-02 w-full h-56 bg-cover ">
+        <div class="container">
+            <h2 class="m-0">Nossa história</h2>
+            <p>Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
+        </div>
     </div>
 
     {{-- <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6"> --}}

@@ -34,69 +34,92 @@
 </head>
 
 <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
-    <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
-        <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
-            <div class="flex items-center">
-                <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                    <img class="h-8 md:h-20 mr-3" src="/assets/img/logo.png" alt="{{ $page->siteName }} logo" />
-                </a>
+    <header role="navbar">
+        <div class="flex items-center shadow bg-white border-b h-24 py-4 z-10 relative">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
+                        <img class="h-8 md:h-20 mr-3" src="/assets/img/logo.png" alt="{{ $page->siteName }} logo" />
+                    </a>
+                </div>
+
+                @include('_nav.menu')
+
+                <div id="vue-search" class="flex flex-1 justify-end items-center">
+                    <search></search>
+
+                    <a href="#" target="_blank" class="rounded-md px-4 py-2 bg-green-700 text-white hover:bg-green-600 hover:text-white">Matricule-se</a>
+                    @include('_nav.menu-toggle')
+                </div>
             </div>
+        </div>
+        <!-- Dropdown menus -->
+        <div id="oSiteToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
+            <ul class="py-1 text-sm" aria-labelledby="oSite">
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Mapa do Site</a>
+            </ul>
+        </div>
 
-            @include('_nav.menu')
+        <div id="contatosToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
+            <ul class="py-1 text-sm" aria-labelledby="contatos">
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Endereço</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">E-mail</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Whatsapp</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Fale Conosco</a>
+            </ul>
+        </div>
 
-            <div id="vue-search" class="flex flex-1 justify-end items-center">
-                <search></search>
+        <div id="cursosToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
+            <ul class="py-1 text-sm" aria-labelledby="cursos">
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Beleza e Estética</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Àrea da Industria</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Àrea da Saúde</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Àrea de Serviços</a>
+            </ul>
+        </div>
 
-                <a href="#" target="_blank" class="rounded-md px-4 py-2 bg-green-700 text-white hover:bg-green-600 hover:text-white">Matricule-se</a>
-                @include('_nav.menu-toggle')
-            </div>
+        <div id="aLiderToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
+            <ul class="py-1 text-sm" aria-labelledby="aLider">
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Missão</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Visão</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Valores</a>
+            </ul>
         </div>
     </header>
 
     @include('_nav.menu-responsive')
 
-    <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
+    <main role="main" class="flex-auto w-full"> {{-- max-w-4xl py-16 px-6 mx-auto container--}}
         @yield('body')
     </main>
 
-    <footer class="mt-12" style="background-color: #1E3E3C;" role="contentinfo">
-        <section class="container grid grid-cols-5 gap-8 mx-auto my-0 text-gray-300 py-16">
-            <div class="leading-none" style="color: #4FA39D;">
+    <footer class="mt-12" style="background-color: #1E3E3C;" role="footer">
+        <section class="container grid grid-cols-4 gap-16 mx-auto my-0 text-gray-300 py-16">
+            <div style="color: #4FA39D;line-height: 0;">
                 <img src="/assets/img/logo.png" alt="Logo {{ $page->siteName }}">
                 <p>@lideremensinocampos</p>
                 <p>(22) 99978-6105</p>
             </div>
-            <div class="leading-none">
-                <h3 class="uppercase" style="color: #4FA39D;">Título</h3>
-                <p>Opção 01</p>
-                <p>Opção 02</p>
-                <p>Opção 03</p>
-                <p>Opção 04</p>
-                <p>Opção 05</p>
+            <div style="line-height: 0;">
+                <h3 class="uppercase" style="color: #4FA39D;">A Escola</h3>
+                <p>Missão</p>
+                <p>Visão</p>
+                <p>Valores</p>
+                <p>Mapa do Site</p>
             </div>
-            <div class="leading-none">
-                <h3 class="uppercase" style="color: #4FA39D;">Título</h3>
-                <p>Opção 01</p>
-                <p>Opção 02</p>
-                <p>Opção 03</p>
-                <p>Opção 04</p>
-                <p>Opção 05</p>
+            <div style="line-height: 0;">
+                <h3 class="uppercase" style="color: #4FA39D;">Cursos</h3>
+                <p>Beleza e Estética</p>
+                <p>Indústria</p>
+                <p>Saúde</p>
+                <p>Administrativo</p>
             </div>
-            <div class="leading-none">
-                <h3 class="uppercase" style="color: #4FA39D;">Título</h3>
-                <p>Opção 01</p>
-                <p>Opção 02</p>
-                <p>Opção 03</p>
-                <p>Opção 04</p>
-                <p>Opção 05</p>
-            </div>
-            <div class="leading-none">
-                <h3 class="uppercase" style="color: #4FA39D;">Título</h3>
-                <p>Opção 01</p>
-                <p>Opção 02</p>
-                <p>Opção 03</p>
-                <p>Opção 04</p>
-                <p>Opção 05</p>
+            <div style="line-height: 0;">
+                <h3 class="uppercase" style="color: #4FA39D;">Contato</h3>
+                <p>Endereço</p>
+                <p>Email</p>
+                <p>Whatsapp</p>
+                <p>Fale Conosco</p>
             </div>
         </section>
 
