@@ -13,6 +13,12 @@ module.exports = {
             safelist: [/language/, /hljs/, /mce/],
         },
     },
+    plugins: [
+        require('flowbite/plugin')
+    ],
+    content: [
+        "./node_modules/flowbite/**/*.js"
+    ],
     theme: {
         extend: {
             fontFamily: {

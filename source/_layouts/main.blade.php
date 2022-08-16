@@ -22,6 +22,10 @@
         @endif
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+
+        <!-- Flowbite is a library of components built on top of the utility-classes from Tailwind CSS -->
+        <script src="../path/to/flowbite/dist/flowbite.js"></script>
+        
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
@@ -30,17 +34,16 @@
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
-
-                        <h1 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">{{ $page->siteName }}</h1>
+                        <img class="h-8 md:h-16 mr-3" src="/assets/img/logo.png" alt="{{ $page->siteName }} logo" />
                     </a>
                 </div>
+
+                @include('_nav.menu')
 
                 <div id="vue-search" class="flex flex-1 justify-end items-center">
                     <search></search>
 
-                    @include('_nav.menu')
-
+                    <a href="#" target="_blank" class="rounded-md px-4 py-2 bg-green-700 text-white hover:bg-green-600 hover:text-white">Matricule-se</a>
                     @include('_nav.menu-toggle')
                 </div>
             </div>

@@ -1,5 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* Code syntax highlighting, powered by https://highlightjs.org */
 @import 'highlight.js/styles/a11y-light.css';
@@ -7,5 +8,3 @@
 @import 'base';
 @import 'mailchimp';
 @import 'blog';
-
-@import 'tailwindcss/utilities';

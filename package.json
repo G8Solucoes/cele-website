@@ -15,9 +15,12 @@
         "laravel-mix-jigsaw": "^2.0.0",
         "postcss": "^8.3.5",
         "postcss-import": "^14.0.2",
-        "tailwindcss": "^2.2.4",
+        "tailwindcss": "^2.2.19",
         "vue": "^2.6.12",
         "vue-loader": "^15.9.6",
         "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "flowbite": "^1.5.2"
     }
 }
