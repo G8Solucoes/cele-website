@@ -5,8 +5,8 @@ body {
 a {
     @apply font-semibold;
     @apply no-underline;
-    @apply text-blue-500;
-    @apply hover:text-blue-700;
+    @apply text-gray-100;
+    @apply hover:text-gray-50;
 }
 
 blockquote {

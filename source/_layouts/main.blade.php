@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -34,7 +34,7 @@
 </head>
 
 <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
-    <header role="navbar">
+    <header>
         <div class="flex items-center shadow bg-white border-b h-24 py-4 z-10 relative">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
@@ -54,18 +54,11 @@
             </div>
         </div>
         <!-- Dropdown menus -->
-        <div id="oSiteToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
-            <ul class="py-1 text-sm" aria-labelledby="oSite">
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Mapa do Site</a>
-            </ul>
-        </div>
-
-        <div id="contatosToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
-            <ul class="py-1 text-sm" aria-labelledby="contatos">
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Endereço</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">E-mail</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Whatsapp</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Fale Conosco</a>
+        <div id="sobreToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
+            <ul class="py-1 text-sm" aria-labelledby="sobre">
+                <a href="/sobre" class="text-white hover:text-white block py-2 px-4">Missão</a>
+                <a href="/sobre" class="text-white hover:text-white block py-2 px-4">Visão</a>
+                <a href="/sobre" class="text-white hover:text-white block py-2 px-4">Valores</a>
             </ul>
         </div>
 
@@ -78,11 +71,18 @@
             </ul>
         </div>
 
-        <div id="aLiderToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
-            <ul class="py-1 text-sm" aria-labelledby="aLider">
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Missão</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Visão</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Valores</a>
+        <div id="contatosToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
+            <ul class="py-1 text-sm" aria-labelledby="contatos">
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Endereço</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">E-mail</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Whatsapp</a>
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Fale Conosco</a>
+            </ul>
+        </div>
+
+        <div id="oSiteToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
+            <ul class="py-1 text-sm" aria-labelledby="oSite">
+                <a href="#" class="text-white hover:text-white block py-2 px-4">Mapa do Site</a>
             </ul>
         </div>
     </header>
@@ -93,7 +93,7 @@
         @yield('body')
     </main>
 
-    <footer class="mt-12" style="background-color: #1E3E3C;" role="footer">
+    <footer style="background-color: #1E3E3C;">
         <section class="container grid grid-cols-4 gap-16 mx-auto my-0 text-gray-300 py-16">
             <div style="color: #4FA39D;line-height: 0;">
                 <img src="/assets/img/logo.png" alt="Logo {{ $page->siteName }}">

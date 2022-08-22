@@ -30,31 +30,36 @@
     @endforeach
     --}}
 
-    <div class="bg-cover-image-01 w-full h-64 bg-cover ">
-        <div class="container">
-            <h2 class="m-0">Nossa história</h2>
-            <p>Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
+    <div class="grid lg:grid-cols-2 grid-cols-1 h-96 overflow-hidden" style="background-color: #ffa303;">
+        <div class="flex flex-col my-0 mx-auto w-9/12 justify-center text-white">
+            <h2 class="text-5xl text-white">Diversos cursos nas áreas de estética, indústria, saúde e serviço!Conheça todos os cursos oferecidos.</h2>
+            <p class="text-2xl text-white">Encontre o curso perfeito para você!</p>
+        </div>
+        <div class="bg-cover-image-01 bg-cover hidden lg:block"></div>
+    </div>
+
+    <div class="container w-full py-16 my-0 mx-auto" style="color: #4FA39D">
+        <div class="text-center">
+            <h2 class="m-0" style="color: #4FA39D">Metodologia de ensino</h2>
+            <p class="text-2xl">Utilizamos as ferramentas mais modernas no mercado para trazer o que há de melhor no ensino, com exposição de temas e utilização de ferramentas interativas, propiciando ao aluno o conhecimento necessário no assunto, com exposição de casos reais e ambientes simulados, estimulando o conhecimento e o alto aprendizado.</p>
         </div>
     </div>
 
-    <div class="bg-blue-500 w-full h-56 bg-cover ">
-        <div class="container">
-            <h2 class="m-0">Nossa história</h2>
-            <p>Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
+    <div class="grid lg:grid-cols-2 grid-cols-1 h-96 overflow-hidden" style="background-color: #4FA39D;">
+        <div class="flex flex-col my-0 mx-auto w-9/12 justify-center text-white">
+            <h2 class="text-5xl text-white">Por que investir em um curso profissionalizante na líder?</h2>
+            <p class="text-xl">Uma formação profissionalizante colabora para que os estudantes adquiram várias competências aplicáveis em um ramo de atuação. Assim, eles se tornam aptos a desempenhar mais de uma função, ampliando suas possibilidades de carreira.</p>
         </div>
+        <div class="bg-cover-image-02 bg-cover bg-right hidden lg:block"></div>
+        {{-- <div>
+            <img src="/assets/img/cover-image-02.webp" alt="Imagem" class="hidden lg:block"/>
+        </div> --}}
     </div>
 
-    <div class="bg-white w-full h-full bg-cover ">
-        <div class="container">
-            <h2 class="m-0">Nossa história</h2>
-            <p>Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
-        </div>
-    </div>
-
-    <div class="bg-cover-image-02 w-full h-56 bg-cover ">
-        <div class="container">
-            <h2 class="m-0">Nossa história</h2>
-            <p>Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
+    <div class="container w-full py-16 my-0 mx-auto" style="color: #4FA39D">
+        <div class="text-center">
+            <h2 class="m-0" style="color: #4FA39D">Nossa história</h2>
+            <p class="text-2xl">Somos um novo conceito em educação, nascemos com a vontade de inovar e trazer aos nossos alunos o que há de mais moderno e inovador no mercado, trazendo novas experiencias e buscando aprimorar o sistema de ensino frente aos novos desafios.</p>
         </div>
     </div>
 
