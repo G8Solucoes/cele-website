@@ -36,7 +36,7 @@
 <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
     <header>
         <div class="flex items-center shadow bg-white border-b h-24 py-4 z-10 relative">
-            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+            <div class="container flex items-center mx-auto">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         <img class="h-8 md:h-20 mr-3" src="/assets/img/logo.png" alt="{{ $page->siteName }} logo" />
@@ -73,10 +73,10 @@
 
         <div id="contatosToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
             <ul class="py-1 text-sm" aria-labelledby="contatos">
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Endereço</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">E-mail</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Whatsapp</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Fale Conosco</a>
+                <a href="/contato" class="text-white hover:text-white block py-2 px-4">Endereço</a>
+                <a href="/contato" class="text-white hover:text-white block py-2 px-4">E-mail</a>
+                <a href="/contato" class="text-white hover:text-white block py-2 px-4">Whatsapp</a>
+                <a href="/contato" class="text-white hover:text-white block py-2 px-4">Fale Conosco</a>
             </ul>
         </div>
 
@@ -93,29 +93,29 @@
         @yield('body')
     </main>
 
-    <footer style="background-color: #1E3E3C;">
+    <footer class="bg-primary-color-600">
         <section class="container grid grid-cols-4 gap-16 mx-auto my-0 text-gray-300 py-16">
-            <div style="color: #4FA39D;line-height: 0;">
+            <div style="line-height: 0;">
                 <img src="/assets/img/logo.png" alt="Logo {{ $page->siteName }}">
                 <p>@lideremensinocampos</p>
                 <p>(22) 99978-6105</p>
             </div>
             <div style="line-height: 0;">
-                <h3 class="uppercase" style="color: #4FA39D;">A Escola</h3>
+                <h3 class="uppercase text-primary-color-500">A Escola</h3>
                 <p>Missão</p>
                 <p>Visão</p>
                 <p>Valores</p>
                 <p>Mapa do Site</p>
             </div>
             <div style="line-height: 0;">
-                <h3 class="uppercase" style="color: #4FA39D;">Cursos</h3>
+                <h3 class="uppercase text-primary-color-500">Cursos</h3>
                 <p>Beleza e Estética</p>
                 <p>Indústria</p>
                 <p>Saúde</p>
                 <p>Administrativo</p>
             </div>
             <div style="line-height: 0;">
-                <h3 class="uppercase" style="color: #4FA39D;">Contato</h3>
+                <h3 class="uppercase text-primary-color-500">Contato</h3>
                 <p>Endereço</p>
                 <p>Email</p>
                 <p>Whatsapp</p>

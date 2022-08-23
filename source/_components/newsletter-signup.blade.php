@@ -1,4 +1,4 @@
-<div class="flex justify-center p-6 md:px-12 text-sm" style="background-color: #162D2C;">
+<div class="flex justify-center p-6 md:px-12 text-sm bg-primary-color-700">
     <!-- Begin Mailchimp Signup Form -->
     <div>
         <form action="https://your-mail-chimp-list-manage-url" method="post" name="mc-embedded-subscribe-form" class="grid grid-cols-3 gap-4 items-center" target="_blank" novalidate>

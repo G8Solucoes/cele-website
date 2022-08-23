@@ -37,6 +37,13 @@ module.exports = {
                 'post-cover-02': "url('/assets/img/post-cover-image-2.png')",
                 'cover-image-01': "url('/assets/img/cover-image-01.webp')",
                 'cover-image-02': "url('/assets/img/cover-image-02.webp')",
+            },
+            colors:{
+                'primary-color-500' : '#4FA39D',
+                'primary-color-600' : '#1E3E3C',
+                'primary-color-700' : '#162D2C',
+                'secondary-color-500' : '#ffa303',
+                'secondary-color-600' : '#d58701', 
             }
         },
         fontSize: {
