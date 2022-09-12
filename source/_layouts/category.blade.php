@@ -17,11 +17,9 @@
 
     <div class="bg-primary-color-500">
         <div class="container mx-auto my-0 py-16">
-            <span><a href="/">Home</a> > <a href="/sobre">{{ $page->title }}</a></span>
-
+            <span class="text-white"><a href="/">Home</a> > <a href="{{ $page->getUrl() }}">{{ $page->title }}</a></span>
             <h1 class="mb-0 text-primary-color-700">{{ $page->title }}</h1>
-
-            <span>Excelência nos serviços prestados</span>
+            <span>Encontre o curso que combina com você</span>
         </div>
     </div>
 
@@ -29,7 +27,7 @@
         @yield('content')
     </div>
 
-    <div class="container mx-auto grid grid-cols-3 gap-4">
+    <div class="container mx-auto grid md:grid-cols-1 grid-cols-2 gap-2">
         @foreach ($page->posts($posts) as $post)
             @include('_components.post-preview-inline')
         @endforeach

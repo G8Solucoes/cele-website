@@ -64,10 +64,10 @@
 
         <div id="cursosToggle" class="hidden w-44 bg-gray-700 divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(319px, 70px);">
             <ul class="py-1 text-sm" aria-labelledby="cursos">
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Beleza e Estética</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Àrea da Industria</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Àrea da Saúde</a>
-                <a href="#" class="text-white hover:text-white block py-2 px-4">Àrea de Serviços</a>
+                <a href="/categories/beleza-estetica/" class="text-white hover:text-white block py-2 px-4">Beleza e Estética</a>
+                <a href="/categories/industria/" class="text-white hover:text-white block py-2 px-4">Área da Industria</a>
+                <a href="/categories/saude/" class="text-white hover:text-white block py-2 px-4">Área da Saúde</a>
+                <a href="/categories/servicos/" class="text-white hover:text-white block py-2 px-4">Área de Serviços</a>
             </ul>
         </div>
 
